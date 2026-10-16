@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10100e">
+<meta name="description" content="Manoj Studio — Wedding Photography, Videography, Cinematic Shoots and Event Coverage.">
+<title>Manoj Studio | Photography & Videography</title>
+<style>
+:root{--bg:#0d0e0d;--panel:#151613;--gold:#f4c542;--gold2:#ffdf72;--text:#f7f5ef;--muted:#c7c4ba;--line:#34342c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(13,14,13,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:44px;height:44px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:25px}
+.brand strong{display:block;color:var(--gold);font:700 23px Georgia,serif;line-height:1.15}
+.brand small{color:var(--muted);font-size:11px}
+nav{display:flex;align-items:center;gap:23px;font-size:14px}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#16140a;border:1px solid var(--gold);border-radius:999px;padding:12px 20px;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--gold2)}
+.btn-outline{background:transparent;color:var(--gold)}
+.hero{min-height:470px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(5,7,6,.95) 0%,rgba(5,7,6,.75) 48%,rgba(5,7,6,.1) 100%),url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{padding:72px 0;max-width:620px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:4px;text-transform:uppercase}
+h1{font:700 clamp(44px,7vw,76px)/1.04 Georgia,serif;color:var(--gold);margin:12px 0}
+.hero h2{font:700 clamp(22px,3vw,31px) Georgia,serif;margin:0 0 15px}
+.hero p{color:#e0dfd8;max-width:480px;font-size:17px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.services{border-block:1px solid var(--line);background:#11120f}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0}
+.service{text-align:center;padding:8px 12px;border-right:1px solid #3a3829}
+.service:last-child{border:0}
+.service .ico{font-size:29px;color:var(--gold)}
+.service h3{font-size:15px;margin:4px 0}
+.service p{font-size:12px;color:var(--muted);margin:0}
+section{padding:66px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about-img{min-height:350px;border-radius:13px;background:url('https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1000&q=85') center/cover}
+h2.section-title{font:700 clamp(30px,4vw,42px)/1.15 Georgia,serif;margin:6px 0 16px}
+.gold{color:var(--gold)}
+.muted{color:var(--muted)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px;font-size:14px}
+.checks span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:9px}
+.gallery-section{background:#11120f;border-block:1px solid var(--line)}
+.center{text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:9px;border:1px solid #39382e;transition:transform .2s}
+.gallery img:hover{transform:scale(1.025)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px}
+.contact-line{margin:13px 0;color:#e6e3db;overflow-wrap:anywhere}
+.contact-line b{color:var(--gold);margin-right:8px}
+form{display:grid;gap:12px}
+input,textarea{width:100%;background:#151714;border:1px solid #3b3d35;border-radius:7px;padding:14px;color:white;font:inherit}
+textarea{min-height:120px;resize:vertical}
+form .btn{border-radius:7px}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.note{font-size:12px;color:#aaa;margin-top:14px}
+@media(max-width:760px){
+ nav{gap:12px;font-size:12px} nav a:not(.nav-cta){display:none}
+ .brand strong{font-size:20px}.nav{min-height:64px}
+ .hero{min-height:460px;background-position:60% center}
+ .hero-content{padding:60px 0}
+ .service-grid{grid-template-columns:1fr 1fr;gap:18px}
+ .service:nth-child(2){border-right:0}
+ .about-grid,.contact-grid{grid-template-columns:1fr}
+ .about-img{min-height:260px}
+ .gallery{grid-template-columns:1fr 1fr;gap:10px}
+ .gallery img{height:150px}
+ section{padding:48px 0}
+}
+@media(max-width:390px){.brand small{font-size:10px}.logo{width:38px;height:38px}.btn{padding:11px 15px}.gallery img{height:125px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="Manoj Studio home">
+   <span class="logo">📷</span><span><strong>Manoj Studio</strong><small>Photography &amp; Videography</small></span>
+  </a>
+  <nav aria-label="Main navigation">
+   <a href="#home">Home</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#services">Services</a><a href="#contact">Contact</a>
+   <a class="btn nav-cta" href="https://wa.me/917310438704" target="_blank" rel="noopener">WhatsApp ↗</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap"><div class="hero-content">
+  <div class="eyebrow">Welcome to</div>
+  <h1>Manoj Studio</h1>
+  <h2>Photography &amp; Videography</h2>
+  <p>We capture your beautiful moments with creativity, care and cinematic storytelling.</p>
+  <div class="actions"><a class="btn" href="#contact">Contact Us →</a><a class="btn btn-outline" href="#gallery">View Gallery</a></div>
+ </div></div>
+</section>
+<div class="services" id="services"><div class="wrap service-grid">
+ <div class="service"><div class="ico">📷</div><h3>Wedding Photography</h3><p>Your big day, beautifully captured</p></div>
+ <div class="service"><div class="ico">🎥</div><h3>Videography</h3><p>Cinematic stories</p></div>
+ <div class="service"><div class="ico">🖼️</div><h3>Portrait Photography</h3><p>Natural and professional</p></div>
+ <div class="service"><div class="ico">✨</div><h3>Event Coverage</h3><p>Family, parties and events</p></div>
+</div></div>
+<section id="about"><div class="wrap about-grid">
+ <div class="about-img" role="img" aria-label="Photographer with a camera"></div>
+ <div><div class="eyebrow">About us</div><h2 class="section-title">Every moment has a <span class="gold">story.</span></h2>
+  <p class="muted">Manoj Studio is here to turn your special moments into memories you can revisit for years. From wedding celebrations to portraits and events, we focus on thoughtful photography and creative video storytelling.</p>
+  <div class="checks"><span>Creative team</span><span>Careful editing</span><span>Cinematic videos</span><span>Personal service</span></div>
+ </div>
+</div></section>
+<section class="gallery-section" id="gallery"><div class="wrap center">
+ <div class="eyebrow">Our gallery</div><h2 class="section-title">Moments We <span class="gold">Capture</span></h2>
+ <p class="muted">A sample gallery — replace these photos with your own studio work.</p>
+ <div class="gallery">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Wedding couple">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=80" alt="Wedding portrait">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80" alt="Camera equipment">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Wedding celebration">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80" alt="Wedding details">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=700&q=80" alt="Wedding couple outdoors">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=700&q=80" alt="Photographer at work">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=700&q=80" alt="Event photography">
+ </div>
+</div></section>
+<section id="contact"><div class="wrap contact-grid">
+ <div><div class="eyebrow">Get in touch</div><h2 class="section-title">Let's create something <span class="gold">beautiful.</span></h2>
+  <p class="muted">Tell us about your event or photography needs.</p>
+  <p class="contact-line"><b>☎</b><a href="tel:+919598058694">95980 58694</a></p>
+  <p class="contact-line"><b>☎</b><a href="tel:+918858199907">88581 99907</a></p>
+  <p class="contact-line"><b>☎</b><a href="tel:+917310438704">73104 38704</a></p>
+  <p class="contact-line"><b>✉</b><a href="mailto:manojpal12891@gmail.com">manojpal12891@gmail.com</a></p>
+  <p class="contact-line"><b>⌖</b>Nigho Bazar, Jaunpur</p>
+  <a class="btn" href="https://wa.me/917310438704?text=Hello%20Manoj%20Studio%2C%20I%20want%20to%20ask%20about%20a%20shoot." target="_blank" rel="noopener">Message on WhatsApp ↗</a>
+ </div>
+ <div>
+  <form id="contactForm">
+   <input id="name" name="name" placeholder="Your name" required>
+   <input id="event" name="event" placeholder="Event type (e.g. Wedding)">
+   <textarea id="message" name="message" placeholder="Tell us what you need..." required></textarea>
+   <button class="btn" type="submit">Send enquiry on WhatsApp ↗</button>
+  </form>
+  <p class="note">The form opens WhatsApp with your message. It does not store your details on this website.</p>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Manoj Studio. All rights reserved.</span><span>Capture your beautiful moments ✨</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name = document.getElementById('name').value.trim();
+ const eventType = document.getElementById('event').value.trim();
+ const message = document.getElementById('message').value.trim();
+ const text = `Hello Manoj Studio!%0AName: ${encodeURIComponent(name)}%0AEvent: ${encodeURIComponent(eventType)}%0AMessage: ${encodeURIComponent(message)}`;
+ window.open('https://wa.me/917310438704?text=' + text, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
